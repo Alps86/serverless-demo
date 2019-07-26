@@ -1,7 +1,7 @@
 {
   "name": "serverless-demo",
   "scripts": {
-    "deploy-stack": "serverless deploy",
+    "deploy-stack": "serverless deploy -v",
     "deploy-s3": "serverless syncToS3",
     "remove": "serverless remove"
   },
