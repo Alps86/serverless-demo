@@ -1,0 +1,12 @@
+{
+  "name": "serverless-demo",
+  "scripts": {
+    "deploy-stack": "serverless deploy",
+    "deploy-s3": "serverless syncToS3",
+    "remove": "serverless remove"
+  },
+  "devDependencies": {
+    "serverless": "^1.48.4",
+    "serverless-offline": "^5.8.0"
+  }
+}

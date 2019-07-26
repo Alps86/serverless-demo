@@ -7,5 +7,8 @@ build-ui:
 deploy-ui:
 	make deploy -C ui
 
+deploy-api:
+	make deploy -C api
+
 remove-ui:
 	make remove -C ui

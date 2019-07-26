@@ -1,0 +1,29 @@
+service: api-demo
+
+provider:
+  name: aws
+  runtime: go1.x
+
+# you can overwrite defaults here
+#  stage: dev
+  region: eu-central-1
+
+package:
+ exclude:
+   - ./**
+ include:
+   - ./build/**
+
+functions:
+  hello:
+    handler: build/hello
+    events:
+      - http:
+          path: api/hello
+          method: get
+  world:
+    handler: build/world
+    events:
+      - http:
+          path: api/world
+          method: get
