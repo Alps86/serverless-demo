@@ -14,3 +14,6 @@ npm-install:
 
 remove:
 	npm run remove
+
+start: npm-install
+	npm run start
