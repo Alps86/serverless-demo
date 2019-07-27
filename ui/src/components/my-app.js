@@ -28,6 +28,32 @@ import {
 // These are the elements needed by this element.
 import './snack-bar.js';
 
+/**
+let Amplify = window["aws_amplify_core"].default;
+let Auth = window["aws_amplify_auth"].default;
+
+Amplify.Auth = Auth;
+
+import awsconfig from '../aws-exports';
+Auth.configure(awsconfig);
+
+let username = "test";
+let password = "test1234";
+let email = "test@web.de";
+
+Auth.signUp({
+  username,
+  password,
+  attributes: {
+    email
+  },
+  validationData: []  //optional
+})
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
+**/
+
+
 class MyApp extends connect(store)(LitElement) {
   static get properties() {
     return {
